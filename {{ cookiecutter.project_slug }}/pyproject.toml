@@ -1,8 +1,8 @@
 [project]
-name = "template"
-version = "0.1.0"
+name = "{{ cookiecutter.project_slug }}"
+version = "{{ cookiecutter.version }}"
 requires-python = ">=3.12"
-
+description = "{{ cookiecutter.project_name }}"
 
 [dependency-groups]
 dev = [
