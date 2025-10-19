@@ -6,11 +6,15 @@ description = "{{ cookiecutter.description }}"
 authors = [
     { name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.email }}" }
 ]
+dependencies = [
+    "pydantic>=2.12.3",
+]
 
 
 [dependency-groups]
 dev = [
     "pre-commit>=4.3.0",
+    "pydantic-settings>=2.11.0",
     "pytest>=8.4.2",
     "pytest-asyncio>=1.2.0",
     "pytest-cov>=7.0.0",
