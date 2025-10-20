@@ -1,5 +1,5 @@
 [project]
-name = "{{ cookiecutter.project_slug }}"
+name = "{{ cookiecutter.project_name }}"
 version = "{{ cookiecutter.version }}"
 requires-python = ">=3.12"
 description = "{{ cookiecutter.description }}"
