@@ -24,7 +24,7 @@ dev = [
 
 [tool.taskipy.tasks]
 format = "ruff check . --fix && ruff format ."
-lint = "ruff check . && ruff . --diff"
+lint = "ruff check ."
 
 test = "pytest --cov -vv"
 post_test = "coverage html"
