@@ -1,0 +1,12 @@
+services:
+  service_name:
+    build: .
+    image: "{{ cookiecutter.project_name }}"
+    container_name: "{{ cookiecutter.project_name }}"
+    restart: unless-stopped
+    env_file: .env #not idea
+    environment:
+      - DATABASE_PATH=/app/main.db
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - .:/app
