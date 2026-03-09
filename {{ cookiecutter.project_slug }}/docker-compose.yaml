@@ -1,8 +1,8 @@
 services:
   service_name:
     build: .
-    image: "{{ cookiecutter.project_name }}:lasted"
-    container_name: "{{ cookiecutter.project_name }}"
+    image: {{ cookiecutter.project_name }}:latest
+    container_name: {{ cookiecutter.project_name }}
     restart: unless-stopped
     environment:
       - DATABASE_PATH=/app/main.db
