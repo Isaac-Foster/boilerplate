@@ -1,7 +1,8 @@
 {
   "project_name": "nome do projeto",
-  "project_folder": "nome da pasta do projeto",
+  "project_folder": "nome da pasta do projeto (ex: my_project_name)",
   "project_slug": "{{ cookiecutter.project_folder.lower().replace(' ', '_') }}",
+  "core_app_name": "nome do app core (ex: app, src)",
   "author_name": "Seu Nome",
   "email": "seu@email.com",
   "description": "Uma breve descrição do seu projeto",
